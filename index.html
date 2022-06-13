@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={YOUR_API_KEY}"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript" src="/index.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-bar"
+          id="search-bar"
+          placeholder="Search"
+        >
+        <button
+          style="
+            border: none;
+            border-radius: 50%;
+            margin: 3px;
+            height: 4em;
+            width: 4em;
+            background-color: #95A5A6d0;;
+            cursor: pointer;
+          "
+          }
+        >
+        <img src="https://img.icons8.com/color/48/undefined/search--v2.png" height="40px" width="40px"/>
+        </button>
+      </div>
+      
+      <div class="weather loading">
+        <div class="temperature">
+          <img
+            src="https://img.icons8.com/color/48/undefined/thermometer.png"
+            height="70px"
+            width="70px"
+            style="margin-bottom: 10px; padding-left: 0px"
+            alt=""
+          />
+          <h1>30° C</h1>
+        </div>
+  
+        <div class="city">
+          <img
+            src="https://img.icons8.com/color/48/undefined/downtown.png"
+            style="margin-bottom: 5px; margin-right: 12px"
+            class = "city-icon"
+          />
+          <h2>City</h2>
+        </div>
+  
+        <div class="description">
+          <img src="./cloud.png" height=60px; width=60px; style="margin-bottom: 5px;margin-right: 3px"/>
+          <h2>Cloudy</h2>
+        </div>
+  
+        <div class="humidity">
+          <img src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/undefined/external-humidity-weather-smashingstocks-flat-smashing-stocks.png" height="50px"
+          width="50px" style="margin-bottom: 7px;margin-right: 12px"/>
+          <h2>51%</h2>
+        </div>
+      </div>
+      </div>
+
+      
+    
+  </body>
+</html>
